@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-sans-serif;
+  margin: 0;
+  background-color: $white;
+  color: $primary;
+  line-height: 24px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h2 {
+  display: flex;
+  gap: 5px;
+  text-decoration: underline;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  width: max-content;
+
+  &:hover {
+    cursor: pointer;
+    color: $tertiary;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.page {
+  padding: 20px 40px;
+  margin: 0 auto;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.header {
+  background-color: adjust-brightness($secondary, 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 16px;
+}
+
+.navigation-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  i {
+    color: $tertiary;
+  }
+}
+
+.main-container {
+  article,
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  i {
+    color: $tertiary;
+  }
+}
+
+.introduction-container {
+  figure {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1px;
+    max-width: 500px;
+  }
+
+  .introduction-container__first-image {
+    grid-column: span 2;
+    width: 300;
+    height: auto;
+  }
+
+  .introduction-container__second-image {
+    grid-column: span 2;
+    width: 300;
+    height: auto;
+  }
+
+  .introduction-container__third-image {
+    width: 150;
+    height: auto;
+  }
+
+  .introduction-container__forth-image {
+    width: 150;
+    height: auto;
+  }
+
+  .introduction-container__caption {
+    grid-column: span 2;
+  }
+}
+
+.sculpture-images__first-image {
+  width: 300;
+  height: auto;
+}
+
+.sculpture-images__second-image {
+  width: 300;
+  height: auto;
+}
+
+.buildings-container__first-image {
+  width: 300;
+  height: auto;
+}
+
+.buildings-container__second-image {
+  width: 300;
+  height: auto;
+}
+
+.footer {
+  background-color: adjust-brightness($secondary, 20%);
+  text-align: center;
+}
+// -------- TABLET MEDIA QUERY --------
+
+@media (width >= $mq-Tablet) {
+  .page {
+    max-width: 740px;
+  }
+
+  .introduction-container {
+    .introduction-container__first-image {
+      width: 500;
+      height: auto;
+    }
+
+    .introduction-container__second-image {
+      width: 500;
+      height: auto;
+    }
+
+    .introduction-container__third-image {
+      grid-column: span 1;
+      width: 250;
+      height: auto;
+    }
+
+    .introduction-container__forth-image {
+      grid-column: span 1;
+      width: 250;
+      height: auto;
+    }
+
+    .introduction-container__caption {
+      grid-column: span 2;
+    }
+  }
+
+  .sculpture-images {
+    max-width: 500px;
+    display: flex;
+    gap: 5px;
+
+    .sculpture-images__first-image {
+      min-width: 300;
+      min-height: 300;
+    }
+
+    .sculpture-images__second-image {
+      width: 300;
+      height: 300;
+    }
+  }
+
+  .buildings-container__first-image {
+    width: 450;
+    height: auto;
+  }
+
+  .buildings-container__second-image {
+    width: 450;
+    height: auto;
+  }
+}
+
+// -------- DESKTOP MEDIA QUERY --------
+
+@media (width >= $mq-Desktop) {
+  .page {
+    max-width: 1200px;
+  }
+
+  .introduction-container {
+    align-items: center;
+    .introduction-container__first-image {
+      width: 600;
+      height: auto;
+    }
+
+    .introduction-container__second-image {
+      width: 600;
+      height: auto;
+    }
+
+    .introduction-container__third-image {
+      grid-column: span 1;
+      width: 300;
+      height: auto;
+    }
+
+    .introduction-container__forth-image {
+      grid-column: span 1;
+      width: 300;
+      height: auto;
+    }
+
+    .introduction-container__caption {
+      grid-column: span 2;
+    }
+  }
+
+  .sculpture-images {
+    margin: 0 auto;
+  }
+
+  .buildings-container__first-image {
+    width: 600;
+    height: auto;
+  }
+
+  .buildings-container__second-image {
+    width: 600;
+    height: auto;
+  }
+}
