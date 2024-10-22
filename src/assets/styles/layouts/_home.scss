@@ -83,15 +83,19 @@ figcaption {
 }
 
 .main-container {
-  section {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 
   i {
     color: $tertiary;
   }
+}
+
+.introduction-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .introduction-images {
@@ -130,6 +134,12 @@ figcaption {
   }
 }
 
+.sculpture-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .sculpture-images__first-image {
   width: 300;
   height: auto;
@@ -140,6 +150,12 @@ figcaption {
   height: auto;
 }
 
+.buildings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .buildings-container__first-image {
   width: 300;
   height: auto;
@@ -148,6 +164,12 @@ figcaption {
 .buildings-container__second-image {
   width: 300;
   height: auto;
+}
+
+.events-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .footer {
