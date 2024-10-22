@@ -83,7 +83,6 @@ figcaption {
 }
 
 .main-container {
-  article,
   section {
     display: flex;
     flex-direction: column;
@@ -95,7 +94,7 @@ figcaption {
   }
 }
 
-.introduction-container {
+.introduction-images {
   figure {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
