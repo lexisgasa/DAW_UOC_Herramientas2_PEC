@@ -107,29 +107,29 @@ figcaption {
     max-width: 500px;
   }
 
-  .introduction-container__first-image {
+  .introduction-images__first-image {
     grid-column: span 2;
     width: 300;
     height: auto;
   }
 
-  .introduction-container__second-image {
+  .introduction-images__second-image {
     grid-column: span 2;
     width: 300;
     height: auto;
   }
 
-  .introduction-container__third-image {
+  .introduction-images__third-image {
     width: 150;
     height: auto;
   }
 
-  .introduction-container__forth-image {
+  .introduction-images__forth-image {
     width: 150;
     height: auto;
   }
 
-  .introduction-container__caption {
+  .introduction-images__caption {
     grid-column: span 2;
   }
 }
