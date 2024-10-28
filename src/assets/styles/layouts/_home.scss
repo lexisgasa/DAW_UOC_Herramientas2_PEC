@@ -104,7 +104,7 @@ figcaption {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 1px;
-    max-width: 500px;
+    max-width: 300px;
   }
 
   .introduction-images__first-image {
@@ -183,32 +183,30 @@ figcaption {
     max-width: 740px;
   }
 
-  .introduction-container {
-    .introduction-container__first-image {
-      width: 500;
-      height: auto;
-    }
+  .introduction-container__first-image {
+    width: 500;
+    height: auto;
+  }
 
-    .introduction-container__second-image {
-      width: 500;
-      height: auto;
-    }
+  .introduction-container__second-image {
+    width: 500;
+    height: auto;
+  }
 
-    .introduction-container__third-image {
-      grid-column: span 1;
-      width: 250;
-      height: auto;
-    }
+  .introduction-container__third-image {
+    grid-column: span 1;
+    width: 250;
+    height: auto;
+  }
 
-    .introduction-container__forth-image {
-      grid-column: span 1;
-      width: 250;
-      height: auto;
-    }
+  .introduction-container__forth-image {
+    grid-column: span 1;
+    width: 250;
+    height: auto;
+  }
 
-    .introduction-container__caption {
-      grid-column: span 2;
-    }
+  .introduction-container__caption {
+    grid-column: span 2;
   }
 
   .sculpture-images {
